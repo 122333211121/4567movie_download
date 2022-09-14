@@ -5,6 +5,9 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 from Crypto.Cipher import AES
 
+if not os.path.exists('./ts文件'):
+    os.mkdir('./ts文件')
+
 headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
         'Accept': 'application/json, text/javascript, */*; q=0.01',
